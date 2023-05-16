@@ -1,0 +1,221 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    color: #124b68;
+
+}
+
+.acesso,
+.recuperacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #7e2226;
+}
+
+.identificacao {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 40px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+    gap: 5px
+}
+
+.identificacao h1 {
+    padding: 0;
+    margin: 15;
+    font-weight: 500;
+    font-size: 2.3em;
+}
+
+.identificacao p {
+    display: inline-block;
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+.identificacao input {
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
+}
+
+.identificacao input:focus {
+    border: 1px solid #741015;
+}
+
+.identificacao label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.identificacao a {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #555;
+    transition: all linear 160ms;
+}
+
+.identificacao a:hover {
+    color: #831818;
+}
+
+.botao {
+    background-color: #5a161a;
+    color: #fff;
+    font-size: 7px;
+    font-weight: 600;
+    border: none !important;
+    transition: all linear 160ms;
+    cursor: pointer;
+    margin: 0 !important;
+
+}
+
+.botao:hover {
+    transform: scale(1.05);
+    background-color: #eb1d28;
+
+}
+
+.recuperacao-senha {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 30px;
+    box-shadow: 40px 40px 80px rgba(red, green, blue, alpha);
+    gap: 20px;
+}
+
+.recuperacao-senha label {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.recuperacao-senha input {
+    padding: 15px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
+}
+
+.recuperacao-senha input:focus {
+    border: 1px solid #741015;
+}
+
+.botao-enviar {
+    background-color: #5a161a;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none !important;
+    transition: all linear 160ms;
+    cursor: pointer;
+    margin: 0 !important;
+
+}
+
+.botao-enviar:hover {
+    transform: scale(1.05);
+    background-color: #eb1d28;
+
+}
+
+.cadastro {
+    width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #7e2226;
+    box-shadow: 1px 0px 1.2px 0px #7e2226;
+    border-radius: 3px;
+    padding: 1em;
+}
+
+.dados-gerais {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.dados-gerais .genero { 
+    width: 100%;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.cadastro h1,
+.cadastro h2,
+.cadastro h3 {
+    font-family:'open_sansregular';
+    font-size: 2.3em;
+    color: #050001;
+    border-bottom: 1px #1a1717 solid;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.cadastro-dados {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 30px;
+}
+
+.dados_input {
+    font-size: 16px;
+    font-family: inherit;
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: 1px #3f0e0e solid;
+    background: #dad6d6fd;
+    outline: none;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.botao-enviar-cadastro {
+    float: left;
+    display: block;
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    background-color: #5a161a;
+    color: #fff;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+    font-family: inherit;
+    font-size: 25px;
+    font-family:'open_sansregular';
+    border-radius: 6px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.botao-enviar-cadastro:hover {
+    transform: scale(1.05);
+    background-color: #eb1d28;
+}

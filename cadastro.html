@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Cadastral</title>
+    <link rel="stylesheet" href="./SRC/CSS/reset.css">
+    <link rel="stylesheet" href="./SRC/CSS/estilos.css">
+    <link rel="stylesheet" href="./SRC/CSS/scrollbar.css">
+</head>
+
+<body>
+    <div class="cadastro">
+        <form method="post" class="cadastro-dados">
+            <div>
+                <h1>Ficha Cadastral</h1>
+                <div class="dados-gerais">
+                    <label for="nome" class="subdados-gerais">Nome Completo:</label>
+                    <input type="text" name="nome" class="dados_input" id="nome" placeholder="Digite seu nome" required>
+                </div>
+                <div class="dados-gerais">
+                    <label for="cpf" class="subdados-gerais">CPF:</label>
+                    <input type="text" name="cpf" class="dados_input" id="cpf" placeholder="Digite seu CPF"
+                        maxlength="11" required>
+                </div>
+                <div class="dados-gerais">
+                    <label for="rg" class="subdados-gerais">RG:</label>
+                    <input type="text" name="rg" class="dados_input" id="rg" placeholder="Digite seu RG" maxlength="11"
+                        required>
+                </div>
+                <div class="dados-gerais">
+                    <label for="mae">Nome da Mãe:</label>
+                    <input type="text" name="mae" class="dados_input" id="mae" placeholder="Nome da Mãe" required>
+                </div>
+                <div class="dados-gerais">
+                    <label for="pai">Nome do Pai:</label>
+                    <input type="text" name="pai" class="dados_input" id="pai" placeholder="Nome do Pai" required>
+                </div>
+                <div class="dados-gerais">
+                    <label for="data-nascimento">Data de Nascimento:</label>
+                    <input type="date" name="data-nascimento" class="dados_input" id="data-nascimento" required>
+                </div>
+                <div class="dados-gerais">
+                    <label for="estadocivil" class="text">Estado civil</label>
+                    <select name="estadocivil" class="dados_input" required>
+                        <option selected disabled class="form_select_option" value="">Selecione</option>
+                        <option value="Solteiro" class="form_select_option">Solteiro(a)</option>
+                        <option value="Casado" class="form_select_option">Casado(a) </option>
+                        <option value="Divorciado" class="form_select_option">Divorciado(a)</option>
+                        <option value="Viúvo" class="form_select_option">Viúvo(a)</option>
+                    </select>
+                </div>
+                <div class="dados-gerais">
+                    <span class="genero">Sexo:</span>
+                    <div class="radio-btn">
+                        <input type="radio" class="form_new_input" id="masculino" name="sexo" value="Masculino"
+                            required="required">
+                        <label for="masculino" class="radio_label form_label"> <span class="radio_new_btn"></span>
+                            Masculino</label>
+                    </div>
+                    <div class="radio-btn">
+                        <input type="radio" class="form_new_input" id="feminino" name="sexo" value="Feminino"
+                            required="required">
+                        <label for="feminino" class="radio_label form_label"> <span class="radio_new_btn"></span>
+                            Feminino</label>
+                    </div>
+                </div>
+            </div>
+            <h2>Endereço</h2>
+            <div class="dados-gerais">
+                <label for="pais">País</label>
+                <input type="text" name="paises" class="dados_input" id="paises" required>
+            </div>
+            <div class="dados-gerais">
+                <label for="estado">Estado</label>
+                <input type="text" name="estado" class="dados_input" id="estado" required>
+            </div>
+            <div class="dados-gerais">
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" class="dados_input" id="cidade" required>
+            </div>
+            <div class="dados-gerais">
+                <label for="rua">Rua</label>
+                <input type="text" name="rua" class="dados_input" id="rua" placeholder="Nome da Rua" required>
+            </div>
+            <div class="dados-gerais">
+                <label for="complemento">Complemento</label>
+                <input type="text" name="complemento" class="dados_input" id="complemento" placeholder="Caso tenha"
+                    required>
+            </div>
+            <div class="dados-gerais">
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro" class="dados_input" id="bairro" placeholder="Nome do Bairro" required>
+            </div>
+            <div class="dados-gerais">
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" class="dados_input" id="cep" placeholder="Digite seu CEP" maxlength="9"
+                    required>
+            </div>
+            <h3>Acesso</h3>
+            <div class="dados-gerais">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" class="dados_input" id="email" placeholder="Digite seu E-mail"
+                    required>
+            </div>
+            <div class="dados-gerais">
+                <label for="senha">Senha</label>
+                <input type="password" nome="senha" class="dados_input" id="pass" name="password" minlength="8" required
+                    placeholder="Digite sua Senha" />
+            </div>
+            <div class="dados-gerais">
+                <label for="confirmacao-de-senha">Confirmação da Senha</label>
+                <input type="password" nome="confirmacao-de-senha" class="dados_input" id="confirmacao-de-senha"
+                    minlength="8" required placeholder="Confirme sua Senha" />
+            </div>
+            <div class="botao-enviar-cadastro">
+                <input type="hidden" value="enviar">
+                <button type="submit" name="Submit" class="botao-enviar-cadastro">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
